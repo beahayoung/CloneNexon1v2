@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: maplestory_l;
+   src: url(../font/Maplestory_Light.ttf);
+}
+
+@font-face {
+   font-family: maplestory_b;
+   src: url(../font/Maplestory_Bold.ttf);
+}
+
+
+/* 통합 */
+body,
+h3,
+h2,
+a,
+h5 {
+   margin: 0;
+   font-family: maplestory_l;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+   color: #333;
+}
+
+#wrap {
+   max-width: 1600px;
+   min-width: 1600px;
+   margin: 0 auto;
+}
+
+button {
+   cursor: pointer;
+}
+
+* {
+   padding: 0px;
+   margin: 0px;
+   outline: none;
+   box-sizing: border-box;
+}
+
+/* section1-home */
+.header {
+   height: 64px;
+   background-color: gold;
+   width: 100%;
+   z-index: 9999;
+   position: fixed;
+   box-shadow: 0px 3px 5px 0px #eee;
+}
+
+.logo {
+   float: left;
+}
+
+.nav {
+   float: right;
+   padding-top: 22px;
+}
+
+.nav ul li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+.mainimg>img {
+   width: 100%;
+   margin-top: 64px;
+}
+
+.mainimg {
+   position: relative;
+   width: 100%;
+}
+
+.mainimg .main_wrap {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.mainimg .main_wrap h1 {
+   font-size: 7rem;
+   display: flex;
+   align-items: center;
+
+}
+
+.mainimg .main_wrap p {
+   text-align: center;
+}
+
+/* section2-game */
+#game {
+      height: 864px;
+}
+
+#game ul {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 49px;
+}
+
+#game li {
+   position: relative;
+   width: 360px;
+   cursor: pointer;
+}
+
+#comment h2,
+#notice h2,
+#game h2 {
+   padding: 20px 0px;
+}
+
+#game h3 {
+   position: absolute;
+   width: 150px;
+   height: 30px;
+   background-color: rgba(255, 238, 6);
+   text-align: center;
+   padding-top: 5px;
+}
+
+.comment_title,
+.notice_title,
+.game_title {
+   margin-bottom: 30px;
+   border-bottom: 2px solid #eee;
+   margin-top: 100px;
+}
+
+#game li>span {
+   width: 0;
+   opacity: 0;
+   height: 300px;
+   transition: 0.2s;
+   background-color: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   left: 0px;
+   text-align: center;
+}
+
+#game li>span>h2 {
+   color: #fff;
+   margin-top: 30%;
+   display: none;
+   transition: 0.4;
+}
+
+#game li:hover span {
+   opacity: 1;
+   width: 360px;
+}
+
+#game li:hover span h2 {
+   display: block;
+}
+
+/* section3-notic */
+#notice {
+    height: 864px;
+}
+
+
+.notext_box p {
+   padding: 20px 5px;
+   border-bottom: 2px solid #333;
+}
+
+.notext_box {
+ width: 100%;
+ margin: 30px 0px;
+}
+
+.notext_box p:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+#notice ul {
+display: flex;
+justify-content: space-between;
+}
+
+#notice li {
+   width: 360px;
+}
+
+#notice button {
+   width: 100%;
+   height: 35px;
+   border: none;
+}
+
+#notice button:hover {
+   background: #000;
+   color: #fff;
+}
+
+#notice h5 {
+   text-align: right;
+}
+
+#notice .noul_box li {
+   overflow: hidden;
+}
+
+#notice .noul_box li img {
+   cursor: pointer;
+   opacity: 0.5;
+   transition: 0.5s;
+}
+
+#notice .noul_box li:hover img {
+   transform: scale(1.2);
+   opacity: 1;
+}
+
+#notice .noul_box div {
+   width: 360px;
+   height: 300px;
+   overflow: hidden;
+}
+
+#notice .noul_box li p:nth-of-type(2) {
+   height: 36px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+#notice .noul_box h3 {
+   margin-top: 30px
+}
+
+
+
+/* section4-comment */
+
+#comment p {
+   height: 50px;
+}
+
+#comment input {
+   display: block;
+   width: 100%;
+   height: 35px;
+   margin-bottom: 15px;
+}
+
+.comment_title {
+   margin-bottom: 20px;
+   border-bottom: 2px solid #eee;
+}
+
+.comment_title h2 {
+   margin-top: 100px;
+}
+
+.com_for {
+       text-align: right;
+}
+.com_for button {
+   width: 300px;
+   height: 35px;
+   margin-bottom: 20px;
+}
+.new img {
+   width: 100%;
+}
+/* SECTION5-footer*/
+#footer {
+   clear: both;
+   padding: 50px;
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+}
